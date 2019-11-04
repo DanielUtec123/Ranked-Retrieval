@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c682e77f-21fd-43a9-8269-edbeb1fd3ab1" name="Default Changelist" comment="show results">
-      <change afterPath="$PROJECT_DIR$/web/image_query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/text_query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Proyecto2Original.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Proyecto2Original.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c682e77f-21fd-43a9-8269-edbeb1fd3ab1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/static/js/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/templates/imageRecover.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Files/11" beforeDir="false" afterPath="$PROJECT_DIR$/web/Files/11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Files/3" beforeDir="false" afterPath="$PROJECT_DIR$/web/Files/3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Files/4" beforeDir="false" afterPath="$PROJECT_DIR$/web/Files/4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Files/6" beforeDir="false" afterPath="$PROJECT_DIR$/web/Files/6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Files/9" beforeDir="false" afterPath="$PROJECT_DIR$/web/Files/9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/image_query.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/static/js/ranked.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/js/ranked.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tf_idf.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/tf_idf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/text_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/text_query.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,20 +21,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="898" />
-    <option name="width" value="1016" />
-    <option name="height" value="1036" />
-  </component>
   <component name="ProjectId" id="1ScbTt0FXZhJkvxLhTGGFsrjOcP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -56,28 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tf_idf">
-    <configuration name="TF-IDF" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Proyecto2Original" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/TF-IDF.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Proyecto2Original" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,6 +62,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="image_query" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Proyecto2Original" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/image_query.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,18 +133,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ws_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Proyecto2Original" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Labs/lab9" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Labs/lab9/ws_recognition.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.app" />
-      <item itemvalue="Python.TF-IDF" />
       <item itemvalue="Python.text_query" />
       <item itemvalue="Python.tf_idf" />
+      <item itemvalue="Python.image_query" />
+      <item itemvalue="Python.ws_recognition" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tf_idf" />
-        <item itemvalue="Python.text_query" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.TF-IDF" />
+        <item itemvalue="Python.text_query" />
+        <item itemvalue="Python.ws_recognition" />
+        <item itemvalue="Python.image_query" />
+        <item itemvalue="Python.tf_idf" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571881541818</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="query_text and txt_test">
+      <created>1572744309333</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572744309333</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -201,6 +223,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="show results" />
-    <option name="LAST_COMMIT_MESSAGE" value="show results" />
+    <MESSAGE value="query_text and txt_test" />
+    <option name="LAST_COMMIT_MESSAGE" value="query_text and txt_test" />
   </component>
 </project>
