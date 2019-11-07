@@ -13,7 +13,7 @@ all_doc_vectors = []  # Cada elemento de la lista es un diccionario, existira un
 doc_freq = {}
 
 
-# Agrega tf dicts (como elementos de una lista) a la lista llamada all_doc_vectors
+# Agrega las palabras de cada documento stemmizada y tokenizada y con su frecuencia a la variable all_doc_vectors
 def read_all_docs():
     with open('test1.json') as f:
         d = json.load(f)
@@ -32,27 +32,27 @@ def read_all_docs():
     #     all_doc_vectors.append(v)
 
 
-# Crea un diccionario tf de la query ingresada
+# Crea un diccionario de frecuencia de palabras a partir de la consulta de entrada.
 def input_vector(theQuery):
     v = {}
     for word in theQuery:
         if word in v:
-            v[word] += 1.0  # Float ya que se convertiran en TF-IDF mas tarde
+            v[word] += 1.0
         else:
             v[word] = 1.0
     return v
 
 
-# Generates inverted index for all documents.
+# Genera el indice invertido para todos los documentos
 def inv_index_all_docs():
     count = 0
     for doc_vector in all_doc_vectors:
         for word in doc_vector:
-            inv_index[word].append(count)  # Aqui defaul dict muestra su valor.
+            inv_index[word].append(count)   # Aqui defaul dict muestra su utilidad, retorna 0
         count += 1
 
 
-# Cambia todas los vectores TF a vectores TF-IDF
+# Cambia todas los vectores de frecuencia (TF) a vectores TF-IDF
 def tf_idf_vectorized():
     length = 0
     for doc_vector in all_doc_vectors:
@@ -66,7 +66,7 @@ def tf_idf_vectorized():
             doc_vector[word] /= length
 
 
-# Calculates the TF-IDF vector for the query in specific.
+# Calcula el vector TF-IDF para la consulta en específico.
 def tf_idf_query(query_vec):
     length = 0.0
     for word in query_vec:
@@ -82,14 +82,14 @@ def tf_idf_query(query_vec):
             query_vec[word] /= length
 
 
-# Calcula el TF-IDF score, dado un TF y un DF
+# Calcula la puntuación TF-IDF
 def tf_idf_score(word, frequency):
     return log(1 + frequency) * log(total_doc_count / doc_freq[word])
 
 
 # Calcula el producto punto dado dos vectores
 def dot_product(vector_a, vector_b):
-    if len(vector_a) > len(vector_b):  # Swapping para asegurarse que la parte izquiera del dict siempre es mas pequena
+    if len(vector_a) > len(vector_b):   # Swapping para asegurarse que la parte izquiera del dict siempre es mas pequena
         temp = vector_a
         vector_a = vector_b
         vector_b = temp
@@ -102,7 +102,7 @@ def dot_product(vector_a, vector_b):
     return res
 
 
-# Retorna una lista de tokens despues del stemming
+# Retorna una lista de palabras stemmizadas y tokenizadas y sin stopwords
 def stem_and_tokenize(doc_text):
     tkn_list = nltk.word_tokenize(doc_text)
     ps = nltk.stem.snowball.SnowballStemmer("spanish")
@@ -112,7 +112,7 @@ def stem_and_tokenize(doc_text):
     return my_result
 
 
-# Creates token-frequency vector from input string.
+# Crea el vector de frecuencia para cada palabra en cada documento.
 def create_vector(the_token_list):
     v = {}
     global doc_freq
@@ -128,13 +128,13 @@ def create_vector(the_token_list):
     return v
 
 
-# Lee data de conjunto de archivos en el Conjunto de Datos presente en el mismo directorio que este script
+# Leer un archivo
 def doc_string(doc_id):
     file_text = str(open("Files/"+str(doc_id)).read())
     return file_text
 
 
-# Retorna una lista de IDs de documentos ordenada y basada en la similitud de coseno
+# Retorna una lista de documentos ordenados basados en la similitud de coseno
 def query_result(q_vector):
     answer = []
     user_idList = list()
@@ -170,13 +170,3 @@ inv_index_all_docs()
 tf_idf_vectorized()
 # TERMINA EL PREPROCESAMIENTO
 
-
-#
-#
-#
-#
-#
-#
-# print("Indexing took " + str(time.time() - start_index_time) + " seconds.")
-# start_search_time = time.time()
-# print("This query took " + str(time.time()-start_search_time) + " seconds.")
