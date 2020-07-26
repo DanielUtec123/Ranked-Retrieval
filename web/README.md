@@ -1,17 +1,18 @@
-# Ranked Retrieval
+# Server
 
-## Features
+## Run
 
-### Preprocess Images and Documents
+### Prerequisites
 
-* Images converted to vertors
-* Compute TF and IDF (Term Frequency and Inversed Document Frecuency)  for documentes
+* Install Flask
 
-### Rank retrieval 
+```
+pip install flask
+```
 
-* Rank documents by TF IDF 
-* Rank Images by KNN (K-nierest neighbor)
+### Run the flask application 
 
-### Server
+```
+python app.py
+```
 
-* Basic implementation of a server in Flask
